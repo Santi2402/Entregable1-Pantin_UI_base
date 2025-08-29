@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Simulador de Alquiler — UI + Consola</title>
+  <link rel="stylesheet" href="./styles.css" />
+  <script defer src="./js/app.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <h1>Simulador de Alquiler</h1>
+    <p class="subtitle">UI visual + <span class="tag">Consola JS</span> (confirmaciones con <code>alert</code>)</p>
+  </header>
+
+  <main class="bento">
+    <section class="card span-2" id="card-catalogo">
+      <h2>Catálogo</h2>
+      <div class="toolbar">
+        <label class="select">
+          Categoría:
+          <select id="filtroCategoria">
+            <option value="Todas">Todas</option>
+            <option value="Económico">Económico</option>
+            <option value="SUV">SUV</option>
+            <option value="Eléctrico">Eléctrico</option>
+          </select>
+        </label>
+        <button id="btnOrdenPrecio">Ordenar por precio</button>
+        <button id="btnReset">Reset</button>
+      </div>
+      <div id="catalogoGrid" class="grid"></div>
+    </section>
+
+    <section class="card" id="card-simulador">
+      <h2>Simular reserva</h2>
+      <div class="form">
+        <label>Auto (ID): <input type="number" id="inputAutoId" min="1" placeholder="Ej: 1" /></label>
+        <label>Días: <input type="number" id="inputDias" min="1" placeholder="Ej: 3" /></label>
+        <button id="btnSimular">Calcular costo</button>
+      </div>
+      <div id="simulacionResultado" class="result"></div>
+      <hr />
+      <button id="btnReservar" class="primary">Reservar</button>
+    </section>
+
+    <section class="card" id="card-reservas">
+      <h2>Mis reservas</h2>
+      <div id="reservasLista" class="list"></div>
+      <div class="totales"><span>Total acumulado:</span><strong id="totalAcumulado">USD 0.00</strong></div>
+      <div class="buttons"><button id="btnLimpiar" class="danger">Borrar todo</button></div>
+    </section>
+
+    <section class="card" id="card-consola">
+      <h2>Modo Consola</h2>
+      <p>Para cumplir la consigna, podés ejecutar el flujo 100% por consola y diálogos.</p>
+      <button id="btnConsola">Abrir menú por diálogos</button>
+      <p class="hint">Abrí la consola (F12 → Console) para ver logs y tablas.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer"><small>Entregable 1 — Curso JavaScript (CoderHouse) · Versión UI</small></footer>
+</body>
+</html>
