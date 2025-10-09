@@ -10,22 +10,37 @@
 
 <body>
     <header class="container site-header">
-        <nav class="nav">
-            <a class="nav-link" href="./pages/app.html">Simulador</a>
-        </nav>
-        <h1>Proyecto Final — Simulador de Alquiler</h1>
-        <p class="subtitle">DOM asíncrono, datos remotos (JSON), librerías y accesibilidad.</p>
+        <section class="hero">
+            <h1 class="hero-title">¡Bienvenido a mi Proyecto Final de JavaScript!</h1>
+            <p class="subtitle">
+                Este proyecto simula un <strong>sistema de alquiler de vehículos</strong> desarrollado con
+                <strong>HTML, CSS y JavaScript puro</strong>.
+                Integra eventos, DOM dinámico, almacenamiento local y cálculos automáticos de descuentos.
+            </p>
+
+            <div class="hero-actions">
+                <a class="btn primary" href="./pages/app.html">Ir al simulador</a>
+                <a class="btn ghost" href="https://github.com/Santi2402/Entregable1-Pantin_UI_base" target="_blank">Ver
+                    código en GitHub</a>
+            </div>
+        </section>
     </header>
     <main class="container">
+
+
         <section class="card">
-            <h2>Qué incluye</h2>
-            <ul>
-                <li>Datos desde <code>data/autos.json</code> (fetch + async/await)</li>
-                <li>Filtros avanzados, buscador en vivo y reservas editables</li>
-                <li>Persistencia en <code>localStorage</code> y formateo con <code>Intl.NumberFormat</code></li>
-                <li>SweetAlert2 (modales) y Toastify (toasts)</li>
-            </ul>
-            <p><a class="btn primary" href="./pages/app.html">Abrir simulador</a></p>
+            <h2>Sobre el proyecto</h2>
+            <p>
+                Este simulador permite elegir un vehículo del catálogo, definir la cantidad de días de alquiler
+                y calcular automáticamente el costo total, aplicando descuentos del <strong>5%</strong> para reservas de
+                3 a 6 días y del <strong>10%</strong> a partir de 7 días.
+            </p>
+            <p>
+                Los datos se almacenan en <strong>LocalStorage</strong> para mantener las reservas incluso al recargar
+                la página.
+                También se implementan librerías externas como <strong>SweetAlert2</strong> y <strong>Toastify</strong>
+                para mejorar la interacción y el diseño de los mensajes.
+            </p>
         </section>
     </main>
 </body>

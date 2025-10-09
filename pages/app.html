@@ -19,11 +19,12 @@
       <a class="nav-link" href="../index.html">Inicio</a>
       <a class="nav-link active" href="./app.html" aria-current="page">Simulador</a>
     </nav>
-    <h1>Catálogo</h1>
-    <p class="subtitle">Filtrá, reservá y editá tus reservas.</p>
+    <h1>Encontrá el auto ideal para tu viaje</h1>
+    <p class="subtitle">Seleccioná un auto y simulá el costo total según los días. Obtené 5% de descuento de 3 a 6 días
+      y 10% de descuento a partir de 7 días.</p>
   </header>
   <main class="container sim-wrap">
-    <form id="filtrosForm" class="filters" autocomplete="off">
+    <form id="filtrosForm" class="filters card" autocomplete="off">
       <label class="sr-only" for="buscador">Buscar</label>
       <input id="buscador" type="search" placeholder="Buscar por marca o modelo…">
       <label class="sr-only" for="filtroCategoria">Categoría</label>
@@ -67,5 +68,25 @@
     </div>
   </main>
 </body>
+<footer class="footer">
+  <div class="container footer-content">
+    <div class="footer-left">
+      <h2 class="brand"><span>CarRent</span></h2>
+      <p>Encontrá tu auto ideal</p>
+    </div>
+
+    <div class="footer-right">
+      <nav class="footer-nav">
+        <a href="../index.html">Inicio</a>
+        <a href="../pages/app.html">Simulador</a>
+      </nav>
+      <p class="copyright">© <span id="year"></span> CarRent — Todos los derechos reservados.</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
 
 </html>
