@@ -1,0 +1,110 @@
+[
+  {
+    "id": 1,
+    "marca": "Toyota",
+    "modelo": "Yaris",
+    "categoria": "Compacto",
+    "precio": 55,
+    "img": "../img/yaris.jpg",
+    "reservado": false
+  },
+  {
+    "id": 2,
+    "marca": "Chevrolet",
+    "modelo": "Onix",
+    "categoria": "Compacto",
+    "precio": 58,
+    "img": "../img/onix.jpg",
+    "reservado": false
+  },
+  {
+    "id": 3,
+    "marca": "Volkswagen",
+    "modelo": "T-Cross",
+    "categoria": "SUV",
+    "precio": 75,
+    "img": "../img/t-cross.jpg",
+    "reservado": false
+  },
+  {
+    "id": 4,
+    "marca": "Nissan",
+    "modelo": "Kicks",
+    "categoria": "SUV",
+    "precio": 72,
+    "img": "../img/kicks.jpg",
+    "reservado": false
+  },
+  {
+    "id": 5,
+    "marca": "BYD",
+    "modelo": "Dolphin",
+    "categoria": "Eléctrico",
+    "precio": 69,
+    "img": "../img/dolphin.jpg",
+    "reservado": false
+  },
+  {
+    "id": 6,
+    "marca": "Renault",
+    "modelo": "Kwid e-tech",
+    "categoria": "Eléctrico",
+    "precio": 49,
+    "img": "../img/kwid.jpg",
+    "reservado": false
+  },
+  {
+    "id": 7,
+    "marca": "Ford",
+    "modelo": "Mustang",
+    "categoria": "Premium",
+    "precio": 200,
+    "img": "../img/mustang.jpg",
+    "reservado": false
+  },
+  {
+    "id": 8,
+    "marca": "BMW",
+    "modelo": "X1",
+    "categoria": "SUV",
+    "precio": 150,
+    "img": "../img/bmw-x1.jpg",
+    "reservado": false
+  },
+  {
+    "id": 9,
+    "marca": "Chevrolet",
+    "modelo": "S10",
+    "categoria": "Pickup",
+    "precio": 130,
+    "img": "../img/s10.jpg",
+    "reservado": false
+  },
+  {
+    "id": 10,
+    "marca": "Toyota",
+    "modelo": "Hilux",
+    "categoria": "Pickup",
+    "precio": 135,
+    "img": "../img/hilux.jpg",
+    "reservado": false
+  },
+  {
+    "id": 11,
+    "marca": "Mercedes-Benz",
+    "modelo": "C-Class",
+    "categoria": "Premium",
+    "precio": 220,
+    "img": "../img/cclass.jpg",
+    "reservado": false
+  },
+  {
+    "id": 12,
+    "marca": "Peugeot",
+    "modelo": "208",
+    "categoria": "Compacto",
+    "precio": 60,
+    "img": "../img/208.jpg",
+    "reservado": false
+  }
+]

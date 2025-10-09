@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Simulador — Proyecto Final</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@5/dark.css">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+  <script defer src="../js/app.js"></script>
+</head>
+
+<body>
+  <header class="container site-header align-left">
+    <nav class="nav">
+      <a class="nav-link" href="../index.html">Inicio</a>
+      <a class="nav-link active" href="./app.html" aria-current="page">Simulador</a>
+    </nav>
+    <h1>Catálogo</h1>
+    <p class="subtitle">Filtrá, reservá y editá tus reservas.</p>
+  </header>
+  <main class="container sim-wrap">
+    <form id="filtrosForm" class="filters" autocomplete="off">
+      <label class="sr-only" for="buscador">Buscar</label>
+      <input id="buscador" type="search" placeholder="Buscar por marca o modelo…">
+      <label class="sr-only" for="filtroCategoria">Categoría</label>
+      <select id="filtroCategoria">
+        <option value="">Todas las categorías</option>
+        <option value="Compacto">Compacto</option>
+        <option value="Midsize">Midsize</option>
+        <option value="SUV">SUV</option>
+        <option value="Eléctrico">Eléctrico</option>
+        <option value="Premium">Premium</option>
+        <option value="Pickup">Pickup</option>
+      </select>
+      <button class="btn primary" type="submit">Aplicar</button>
+      <button class="btn ghost" id="btnReset" type="button">Limpiar</button>
+    </form>
+    <section class="extra-filters">
+      <div class="ef-col">
+        <label for="filtroPrecio">Precio máx: <span id="precioValue">300</span> USD</label>
+        <input type="range" id="filtroPrecio" min="0" max="300" step="10" value="300">
+      </div>
+      <div class="ef-col">
+        <label><input type="checkbox" id="soloDisponibles"> Solo disponibles</label>
+      </div>
+    </section>
+    <div class="grid-2col">
+      <section aria-label="Catálogo de vehículos">
+        <div class="list-head">
+          <h2>Catálogo</h2><span id="countBadge" class="badge">0</span>
+        </div>
+        <div id="catalogoGrid" class="grid-cards" aria-live="polite"></div>
+        <p id="msgCatalogo" class="muted"></p>
+      </section>
+      <aside class="panel" aria-label="Carrito de reservas">
+        <div class="panel-head">
+          <h2>Mis reservas</h2><button class="btn ghost" id="btnVaciar">Vaciar</button>
+        </div>
+        <div id="reservasLista" class="stack" aria-live="polite"></div>
+        <div class="totales"><span>Total</span><strong id="totalAcumulado">USD 0,00</strong></div>
+        <p id="msgUI" class="msg" aria-live="polite"></p>
+      </aside>
+    </div>
+  </main>
+</body>
+
+</html>
